@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 
-class Venta_Detalles(models.Model):
+class VentaDetalles(models.Model):
     idVenta = models.ForeignKey('ventas.Venta', on_delete=models.CASCADE)
     idProducto = models.ForeignKey('productos.Producto', on_delete=models.CASCADE)
     cantidad = models.IntegerField()

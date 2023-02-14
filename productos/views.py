@@ -18,7 +18,7 @@ def verProductoView(request, id):
         'producto': producto
     }
 
-    return render(request, 'templates/productos/verProducto.html', context)
+    return render(request, 'productos/verProducto.html', context)
 
 def crearProductoView(request):
     form = ProductoForm(request.POST or None)
